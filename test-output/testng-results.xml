@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-06-27T15:51:40 IST" name="Default suite" finished-at="2024-06-27T15:51:55 IST" duration-ms="14500">
+    <groups>
+    </groups>
+    <test started-at="2024-06-27T15:51:40 IST" name="Default test" finished-at="2024-06-27T15:51:55 IST" duration-ms="14500">
+      <class name="org.demo.AppTest">
+        <test-method signature="configure()[pri:0, instance:org.demo.AppTest@196a42c3]" started-at="2024-06-27T15:51:41 IST" name="configure" finished-at="2024-06-27T15:51:55 IST" duration-ms="14408" status="FAIL">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 404. Message: The session identified by 6add21df-9f49-47ff-84a9-4e2d8d54a547 is not known 
+Host info: host: 'SKY', ip: '192.168.31.22'
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:automationName=UIAutomator2, appium:adbExecTimeout=50000, appium:appPackage=com.example.semantics, appium:appWaitforLaunch=false, platformName=ANDROID, appium:app=D:\Work\Automation\Eclipse\RSoft_Automation\Mobile_Automation\app_debug.apk, appium:platformVersion=15, appium:appActivity=com.example.semantics.MainActivity, appium:deviceName=emulator-5554}], desiredCapabilities=Capabilities {appium:adbExecTimeout: 50000, appium:app: D:\Work\Automation\Eclipse\..., appium:appActivity: com.example.semantics.MainA..., appium:appPackage: com.example.semantics, appium:appWaitforLaunch: false, appium:automationName: UIAutomator2, appium:deviceName: emulator-5554, appium:platformVersion: 15, platformName: ANDROID}}]
+Capabilities {appium:adbExecTimeout: 50000, appium:app: D:\Work\Automation\Eclipse\..., appium:appActivity: com.example.semantics.MainA..., appium:appPackage: com.example.semantics, appium:appWaitforLaunch: false, appium:automationName: UIAutomator2, appium:deviceName: emulator-5554, appium:platformVersion: 15, platformName: ANDROID}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 404. Message: The session identified by 6add21df-9f49-47ff-84a9-4e2d8d54a547 is not known 
+Host info: host: 'SKY', ip: '192.168.31.22'
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:automationName=UIAutomator2, appium:adbExecTimeout=50000, appium:appPackage=com.example.semantics, appium:appWaitforLaunch=false, platformName=ANDROID, appium:app=D:\Work\Automation\Eclipse\RSoft_Automation\Mobile_Automation\app_debug.apk, appium:platformVersion=15, appium:appActivity=com.example.semantics.MainActivity, appium:deviceName=emulator-5554}], desiredCapabilities=Capabilities {appium:adbExecTimeout: 50000, appium:app: D:\Work\Automation\Eclipse\..., appium:appActivity: com.example.semantics.MainA..., appium:appPackage: com.example.semantics, appium:appWaitforLaunch: false, appium:automationName: UIAutomator2, appium:deviceName: emulator-5554, appium:platformVersion: 15, platformName: ANDROID}}]
+Capabilities {appium:adbExecTimeout: 50000, appium:app: D:\Work\Automation\Eclipse\..., appium:appActivity: com.example.semantics.MainA..., appium:appPackage: com.example.semantics, appium:appWaitforLaunch: false, appium:automationName: UIAutomator2, appium:deviceName: emulator-5554, appium:platformVersion: 15, platformName: ANDROID}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:116)
+at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:96)
+at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:176)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:268)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:161)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:90)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:102)
+at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:109)
+at org.demo.AppTest.configure(AppTest.java:65)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configure -->
+      </class> <!-- org.demo.AppTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
